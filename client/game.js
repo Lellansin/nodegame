@@ -14,7 +14,7 @@ function preload() {
 }
 
 function create() {
-	socket = io.connect('http://box.mgrilec.com:3000');
+	socket = io.connect('http://localhost:3000');
 	socket.on('server_update', function (data) {
 
 		// get all server ship ids
